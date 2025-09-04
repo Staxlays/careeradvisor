@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+    <category>
+        <pattern>*</pattern>
+        <template>I'm not sure how to respond to that. Feel free to respond with 'restart' and we can try starting the process of picking a potential career over again!</template>
+    </category>
+    
+  <category>
+      <pattern>HI</pattern>
+      <template>Hello, welcome to the career center! Can I help you find a career suited to your interests?</template>
+  </category>
+  
+  <category>
+      <pattern>^ RESTART</pattern>
+      <template><srai>HI</srai></template>
+  </category>
+  
+  <category>
+      <pattern>YES ^</pattern>
+      <template>Awesome, lets get into it! Do you prefer coding and building software or analyzing data?</template>
+  </category>
+  
+  <category>
+      <pattern>^ CODING </pattern>
+      <template>Me too! Do you think you would prefer creating applications for people or securing systems?</template>
+  </category>
+  
+  <category>
+      <pattern>^ APPLICATIONS</pattern>
+      <template>Cool! Would you prefer working with web based applications or just software in general?</template>
+  </category>
+  
+  <category>
+      <pattern>^ WEB</pattern>
+      <template>Okay! I think finding a career as a <b>Web Developer</b> would be right up your alley!</template>
+  </category>
+  
+  <category>
+      <pattern>^ SOFTWARE</pattern>
+      <template>Okay! I think finding a career as a <b>Software Developer</b> would suit you well!</template>
+  </category>
+  
+  <category>
+      <pattern>^ SECURING</pattern>
+      <template>Okay! I think finding a career as a <b>Cybersecurity Specialist</b> would be great for you!</template>
+  </category>
+  
+  <category>
+      <pattern>^ DATA</pattern>
+      <template>Do you find it more interesting working with statistics or building smart systems?</template>
+  </category>
+  
+  <category>
+      <pattern>^ STATISTICS</pattern>
+      <template>Okay! I think working towards becoming a <b>Data Scientist</b> would be great for you!</template>
+  </category>
+  
+  <category>
+      <pattern>^ SYSTEMS</pattern>
+      <template>Okay! I think you would enjoy being an <b>AI/ML Engineer</b>!</template>
+  </category>
+</aiml>
+
